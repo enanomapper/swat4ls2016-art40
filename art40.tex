@@ -1,0 +1,66 @@
+\documentclass{llncs}
+
+\begin{document}
+
+\title{Answering scientific questions with linked European nanosafety data}
+
+\author{
+  Egon Willighagen\inst{1} \and
+  Micha Rautenberg\inst{2} \and
+  Linda Rieswijk\inst{1} \and
+  Friederieke Ehrhart\inst{1} \and
+  Georgios Drakakis\inst{3} \and
+  Haralambos Sarimveis\inst{3} \and
+  Christoph Helma\inst{2} \and
+  Nina Jeliazkova\inst{4}
+}
+
+\institute{
+  Dept of Bioinformatics - BiGCaT, Maastricht University, NL \and
+  in silico toxicology Gmbh, Freiburg, DE \and
+  XXXXXX \and
+  IdeaConsult Ltd., Sofia, BG
+}
+
+\maketitle
+
+Nanomaterials are increasingly used in healthcare and consumer products. The 
+safety of these materials seems adequate, but the European community seeks to 
+back this up with experimental research data. Ideally, read across and 
+predictive toxicology approaches can then be used to answer questions if a class 
+of metal oxides is genotoxic or not. If successful, this will replace animal 
+testing in bringing new nanomaterials to the market.
+
+The eNanoMapper project is an FP7 project developing an ontology and database 
+solutions for the data generated in the EU NanoSafety
+Cluster (\url{http://enanomapper.net/})~\cite{Hastings2015,Jeliazkova2015}. This 
+includes extracts of experimental data from, for example, cell line experiments, 
+environmental toxicity studies, and high-throughput screening results. More 
+important, however, is that this data is no longer static but can be queried and 
+analysed. That is, to make the best use of this data, integration with other 
+life science databases is needed, such as protein sequence database like Uniprot 
+and compound databases such as ChEMBL~\cite{Willighagen2013} and
+PubChem~\cite{Fu2015}. Doing so allows us to 
+test scientific hypotheses such as about the genotoxicity of metal oxides, 
+whether chemically similar nanomaterials have similar bioactivities, or whether 
+protein coronas contain preferably proteins involved in specific biological 
+processes.
+
+Semantic Web standards are an increasingly central interoperability layer 
+linking experimental data to scientific knowledge. eNanoMapper has been working 
+on extending the semantics of the database software to import and export data in 
+a serialization based on the Resource Description Framework (RDF) and the 
+eNanoMapper ontology. The RDF data is made available as dereferenceable data and 
+via a SPARQL endpoint. These technologies are then used to support the research 
+data management in the community. First, data completeness is checked by 
+using SPARQL queries, thereby highlighting missing data. Second, the scientific 
+questions predefined by the eNanoMapper project, such as mentioned earlier in 
+this abstract, are supported by SPARQL queries aggregating the relevant data. 
+Finally, the eNanoMapper RDF is enriched with links to other Linked Open Data 
+Cloud resources (e.g. ChEMBL, PubChem) to support further nanosafety research.
+
+\bibliography{art40}{}
+\bibliographystyle{splncs03}
+
+\end{document}
+
